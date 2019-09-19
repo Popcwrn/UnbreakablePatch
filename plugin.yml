@@ -1,0 +1,5 @@
+name: UnbreakablePatch
+author: Popcwrn
+description: A plugin that removes the unbreakable tag. Along with 32k Durability Armor.
+verson: "1.0"
+main: me.popcwrn.unbreakablepatch.main
