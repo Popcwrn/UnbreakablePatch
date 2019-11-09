@@ -38,7 +38,7 @@ public class Main extends JavaPlugin implements Listener {
     }
 
     private void revertUnbreakable(ItemStack itemStack) {
-        if (itemStack != null && itemStack.getType().isItem()) {
+        if (itemStack != null && itemStack.getType().isItem() && !itemStack.getType().isEdible() && !itemStack.getType().isBlock()) {
             if (itemStack.getDurability() > itemStack.getType().getMaxDurability() || itemStack.getDurability() < 0 || itemStack.getItemMeta().isUnbreakable()) {
                 itemStack.setDurability((short) 0);
                 itemStack.getItemMeta().setUnbreakable(false);
